@@ -2,8 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import Nav from "./Nav"
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -19,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`no-scroll-bar ${inter.className}`}>
-        <Nav />
-        {children}</body>
+        {children}
+      </body>
     </html>
   )
 }
